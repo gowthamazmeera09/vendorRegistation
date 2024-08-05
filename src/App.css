@@ -1,0 +1,41 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+/* Navbar */
+.header{
+  width: 100%;
+  height: 60px;
+  background-color: orangered;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left-header a, .right-header a{
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+/* Login */
+.Login form{
+  width: 300px;
+  height: 320px;
+  border: 1px solid black;
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+/* Register */
+.Register form{
+  width: 300px;
+  height: 320px;
+  border: 1px solid black;
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
