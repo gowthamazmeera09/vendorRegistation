@@ -23,8 +23,7 @@ function Login() {
       if(responce.ok){
         alert("Login successful");
         localStorage.setItem('logintoken',data.token);
-        navigate('/')
-        Register('false')
+        navigate('/');
 
 
       }
