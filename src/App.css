@@ -83,6 +83,13 @@
   left: 50%;
   transform: translate(-50%,-50%);
 }
+/* Addfirm-table */
+.Addfirm{
+  width: auto;
+  height: auto;
+  border: 1px solid black;
+  text-align: center;
+}
 
 
 
