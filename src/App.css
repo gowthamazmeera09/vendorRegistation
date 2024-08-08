@@ -23,7 +23,7 @@
   border: 1px solid black;
   text-align: center;
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
 }
@@ -34,8 +34,55 @@
   border: 1px solid black;
   text-align: center;
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
 }
+
+/* sidebar */
+
+.sidebar ul{
+  display: flex;
+  font-size: 18px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  margin-right: 30px;
+
+}
+.sidebar ul li{
+  background-color: rgb(149, 149, 238);
+}
+.Addfirm{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.Addproduct{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.Allproducts{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.Userdetails{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.Home h3{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+
 

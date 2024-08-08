@@ -10,14 +10,36 @@ import {
 import Login from './components/pages/Login';
 import Register from './components/pages/Register';
 import Home from './components/pages/Home';
+import Addfirm from './components/pages/Addfirm';
+import Addproduct from './components/pages/Addproduct';
+import Allproducts from './components/pages/Allproducts';
+import Userdetails from './components/pages/Userdetails';
 var router = createBrowserRouter([
   {
     path:"/",
     element:<App />,
     children:[
       {
-        path:"/",
-        element:<Home />
+        path:"/Home",
+        element:<Home />,
+        children:[
+          {
+            path:"/Home/Addfirm",
+            element:<Addfirm />
+          },
+          {
+            path:"/Home/Addproduct",
+            element:<Addproduct />
+          },
+          {
+            path:"/Home/Allproducts",
+            element:<Allproducts />
+          },
+          {
+            path:"/Home/Userdetails",
+            element:<Userdetails />
+          }
+        ]
       },
       {
         path:"/Login",
@@ -26,6 +48,22 @@ var router = createBrowserRouter([
       {
         path:"/Register",
         element:<Register />
+      },
+      {
+        path:"/Addfirm",
+        element:<Addfirm />
+      },
+      {
+        path:"/Addproduct",
+        element:<Addproduct />
+      },
+      {
+        path:"/Allproducts",
+        element:<Allproducts />
+      },
+      {
+        path:"/Userdetails",
+        element:<Userdetails />
       }
     ]
   }

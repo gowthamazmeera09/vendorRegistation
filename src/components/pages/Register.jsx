@@ -10,6 +10,12 @@ function Register() {
 
  const handlesubmit = async(e)=>{
   e.preventDefault();
+
+
+  if(!username || !email || !password){
+    alert("please fill in all the feilds")
+    return;
+  }
   try{
     const responce = await fetch(`${API_URL}/vendor/Register`,{
       method:'POST',
@@ -22,12 +28,16 @@ function Register() {
     const data = await responce.json();
     if(responce.ok){
       console.log(data);
-      alert("vendor registered successfully");
+      alert("registation successfull")
       navigate('/Login')
     }
-    else{
-      alert("registation failed");
-      navigate('/Register');
+    else if(email){
+      alert("email already taken");
+      setUsername("");
+      setEmail("");
+      setPassword("");
+    }
+    else {
       setUsername("");
       setEmail("");
       setPassword("");
@@ -50,9 +60,10 @@ function Register() {
         <input type='text' value={password} onChange={(e)=>{setPassword(e.target.value)}} placeholder='password' />
         <div className='btn-submit'>
           <button type='submit'>submit</button>
-        </div>
 
+        </div>
       </form>
+      
     </div>
   )
 }
