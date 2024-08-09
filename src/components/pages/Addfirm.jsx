@@ -123,7 +123,7 @@ function Addfirm() {
           <br></br>
           <br></br>
           <h5>image</h5>
-          <input type='file' onChange={handleImageUpload} />
+          <input type='file' accept="image/*"  onChange={handleImageUpload} />
           <div className='btn-submit'>
           <button type='submit'>
             submit
