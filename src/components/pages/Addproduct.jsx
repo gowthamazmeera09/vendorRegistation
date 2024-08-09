@@ -13,8 +13,8 @@ function Addproduct() {
           <br></br>
           <span>
           <h6>Category:</h6>
-          <input type='checkbox' />veg
-          <input type='checkbox' />non-veg
+          <input type='checkbox'value="veg" />veg
+          <input type='checkbox' value="non-veg" />non-veg
           </span>
           <br></br>
           <br></br>
